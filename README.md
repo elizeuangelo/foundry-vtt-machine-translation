@@ -70,9 +70,11 @@ It works like this, first it reads `.\input` folder for the `[from_language].jso
 As items are being translated, `[to_language].json` files are generated inside the `.\output` folder, as well as an `info.json` file. This file contains an easy copy and paste `"languages"` object to put inside a module's `manifest.json`, containing all `to_languages` used in the project.
 
 **[from_language]** = `en`:
+
 The base language, needs an analogous `[from_language].json` file inside the `.\input` folder.
 
 **[to_languages]** = `cn,de,es,fr,it,ja,ko,pl,pt,ru,th`:
+
 Specifies the output languages included in the module.
 
 ## License
