@@ -56,9 +56,11 @@ The scripts are located inside the `.\tools` folder, just go to their folders an
 This script searches for all js/ts documents inside the `.\input` folder and creates an empty json containing all references in `.\output`.
 
 **-a or -A**:
+
 Sorts out the references alphabetically.
 
 **[output-file]** = `en`:
+
 Specifies the output json generated, defaults as `en`.
 
 ### translator.py [from_language] [to_languages]
