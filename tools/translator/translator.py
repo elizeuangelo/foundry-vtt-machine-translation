@@ -21,12 +21,15 @@ import simplejson as json
 # Choose the translator service
 translators = ((ts.bing, "Bing"), (ts.google, "Google"))
 
+file_name = {"pt": "pt-BR"}
+translation_name = {"cn": "zh-CN"}
+
 
 def load(file):
     '''
     Loads a json file and return its contents.
     '''
-    buffer = open(file, "r")
+    buffer = open(file, "r", encoding="utf-8")
     loaded = json.load(buffer)
     buffer.close()
     return loaded
@@ -36,11 +39,9 @@ def save(dict_translation, output_lang):
     '''
     Save a dictionary as a json file inside `output/lang` using the output_lang as its name.
     '''
-    mutations = {"pt": "pt-BR"}
-    if output_lang in mutations.keys():
-        outputfile = mutations[output_lang] + ".json"
-    else:
-        outputfile = output_lang + ".json"
+    if output_lang not in file_name.keys():
+        file_name[output_lang] = output_lang
+    outputfile = file_name[output_lang] + ".json"
     file = open("output/lang/" + outputfile, "w", encoding="utf-8")
     json.dump(dict_translation, file, ensure_ascii=False, indent="    ")
     file.close()
@@ -51,6 +52,8 @@ def translate(loaded, input_lang="en", output_lang="pt", references={}):
     '''
     Translate all references in a dictionary to the output_lang.
     '''
+    if output_lang not in translation_name.keys():
+        translation_name[output_lang] = output_lang
     output_dict = {}
     for key, value in loaded.items():
         if key in references:
@@ -60,11 +63,12 @@ def translate(loaded, input_lang="en", output_lang="pt", references={}):
                 try:
                     output_dict[key] = translator(value,
                                                   from_language=input_lang,
-                                                  to_language=output_lang)
+                                                  to_language=translation_name[output_lang])
                     break
                 except Exception as error:
                     print(
-                        f"Problem in translating ({name}): input: {input_lang} / output: {output_lang} / {key}:{value} / ERROR: {error}"
+                        f"Problem in translating ({name}): input: {input_lang} /" /
+                        f"output: {output_lang} / {key}:{value} / ERROR: {error}"
                     )
                     print("Trying again with next translator...")
 
@@ -72,47 +76,44 @@ def translate(loaded, input_lang="en", output_lang="pt", references={}):
 
 
 if __name__ == "__main__":
-    langList = [
+    lang_list = [
         "cn", "de", "es", "fr", "it", "ja", "ko", "pl", "pt", "ru", "th"
     ]
     lang_src = "en"
     if len(argv) > 1:
         lang_src = argv[1]
     if len(argv) > 2:
-        langList = argv[2].split(",")
+        lang_list = argv[2].split(",")
     lang_src_file = "input/" + lang_src + ".json"
     references = {}
-    for lang in langList:
+    for lang in lang_list:
+        if lang not in file_name.keys():
+            file_name[lang] = lang
         try:
-            references[lang] = load("input/" + lang + ".json")
+            references[lang] = load("input/" + file_name[lang] + ".json")
             print(f"Found {lang} references file")
         except:
             pass
-    inputJSON = load(lang_src_file)
+    input_json = load(lang_src_file)
     f = open("module.json", "r", encoding="utf-8")
-    moduleReading = json.load(f)
+    module_reading = json.load(f)
     f.close()
-    moduleOutput = {"languages": []}
-    print(langList)
-    for lang in langList:
-        mutations = {"cn": "zh-CN"}
-        if lang in mutations.keys():
-            input_lang = mutations[lang]
-        else:
-            input_lang = lang
+    module_output = {"languages": []}
+    print(lang_list)
+    for lang in lang_list:
         if lang in references:
-            translation = translate(inputJSON, lang_src, input_lang,
+            translation = translate(input_json, lang_src, lang,
                                     references[lang])
         else:
-            translation = translate(inputJSON, lang_src, input_lang)
+            translation = translate(input_json, lang_src, lang)
         file_output = save(translation, lang)
         print(
             f'Translated {lang_src} to {lang}! "output/{file_output}" created. Done!'
         )
-    for lang in moduleReading["languages"]:
-        if lang["lang"] in langList + [lang_src]:
-            moduleOutput["languages"].append(lang)
+    for lang in module_reading["languages"]:
+        if lang["lang"] in lang_list + [lang_src]:
+            module_output["languages"].append(lang)
     f = open("output/info.json", "w", encoding="utf-8")
-    json.dump(moduleOutput, f, ensure_ascii=False, indent="\t")
+    json.dump(module_output, f, ensure_ascii=False, indent="\t")
     f.close()
     copyfile(lang_src_file, "output/lang/" + lang_src + ".json")

@@ -1,0 +1,22 @@
+{
+    "NT.ButtonTitle": "paesaggio",
+    "NT.Narrator": "narratore",
+    "NT.CfgName": "configurare",
+    "NT.Title": "Strumenti dell'Assistente vocale",
+    "NT.CfgLabel": "Impostazioni",
+    "NT.NarrationNav": "Stile di narrazione",
+    "NT.AppearanceHint": "Configurare l'aspetto del commento audio.",
+    "NT.FontSize": "Dimensione carattere",
+    "NT.OthersNav": "comportamento",
+    "NT.OthersHint": "Configurare il comportamento del modulo.",
+    "NT.Pause": "Controllo automatico dello scenario quando il gioco è in pausa",
+    "NT.DurationMultiplier": "Moltiplicatore di durata",
+    "NT.DurationMultiplierHint": "Moltiplica la durata del /narrate per il numero specificato",
+    "NT.TextColor": "Colore",
+    "NT.TextShadow": "ombra",
+    "NT.TextCSS": "CSS (esegue l'override di altri stili)",
+    "NT.BGColor": "Colore sfondo",
+    "NT.BGColorHint": "Utilizzare 8 cifre anziché 6 per impostare la trasparenza, ad esempio #000000a0",
+    "NT.BGImage": "Immagine di sfondo",
+    "NT.NarrationStartPaused": "Avviare sempre una narrazione in pausa"
+}

@@ -1,0 +1,22 @@
+{
+    "NT.ButtonTitle": "風景",
+    "NT.Narrator": "ナレーター",
+    "NT.CfgName": "構成",
+    "NT.Title": "ナレーター ツール",
+    "NT.CfgLabel": "設定",
+    "NT.NarrationNav": "ナレーションスタイル",
+    "NT.AppearanceHint": "ナレーションの外観を設定します。",
+    "NT.FontSize": "フォントサイズ",
+    "NT.OthersNav": "振舞い",
+    "NT.OthersHint": "モジュールの動作を構成します。",
+    "NT.Pause": "ゲームが一時停止されたときの自動風景制御",
+    "NT.DurationMultiplier": "デュレーション乗数",
+    "NT.DurationMultiplierHint": "/narrate の期間に指定した数を乗算します。",
+    "NT.TextColor": "色",
+    "NT.TextShadow": "影",
+    "NT.TextCSS": "CSS (他のスタイルを上書き)",
+    "NT.BGColor": "背景色",
+    "NT.BGColorHint": "透明度を設定するには、6 の代わりに 8 桁の数字を使用#000000a0",
+    "NT.BGImage": "背景画像",
+    "NT.NarrationStartPaused": "ナレーションを常に一時停止して開始する"
+}

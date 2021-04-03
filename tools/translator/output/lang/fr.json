@@ -1,0 +1,22 @@
+{
+    "NT.ButtonTitle": "Paysage",
+    "NT.Narrator": "narrateur",
+    "NT.CfgName": "configurer",
+    "NT.Title": "Outils narrateur",
+    "NT.CfgLabel": "Paramètres",
+    "NT.NarrationNav": "Style narration",
+    "NT.AppearanceHint": "Configurez l’apparence de la narration.",
+    "NT.FontSize": "Taille de police",
+    "NT.OthersNav": "comportement",
+    "NT.OthersHint": "Configurez le comportement du module.",
+    "NT.Pause": "Contrôle automatique des paysages lorsque le jeu est mis en pause",
+    "NT.DurationMultiplier": "Multiplicateur de durée",
+    "NT.DurationMultiplierHint": "Multiplie la durée du /narrateur par le nombre spécifié",
+    "NT.TextColor": "Couleur",
+    "NT.TextShadow": "ombre",
+    "NT.TextCSS": "CSS (remplace les autres styles)",
+    "NT.BGColor": "Couleur de fond",
+    "NT.BGColorHint": "Utilisez 8 chiffres au lieu de 6 pour définir la transparence, par exemple #000000a0",
+    "NT.BGImage": "Image de fond",
+    "NT.NarrationStartPaused": "Toujours commencer une narration en pause"
+}

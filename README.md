@@ -21,7 +21,7 @@ Some python3 scripts for Foundry VTT developers to easily translate their packag
 
 ## Installation
 
-1. Clone the repository or [download the zip](https://github.com/elizeuangelo/foundry-vtt-machine-translation/archive/refs/tags/v1.0.zip)
+1. Clone the repository or [download the zip](https://github.com/elizeuangelo/foundry-vtt-machine-translation/archive/refs/tags/v1.01.zip)
 
 ```
 git clone https://github.com/elizeuangelo/foundry-vtt-machine-translation.git
@@ -46,6 +46,8 @@ pip install -r requirements.txt
 ```
 
 ## How to Use
+
+The scripts are located inside the `.\tools` folder, just go to their folders and execute the scripts from the command-line, as in `python -a index.py`.
 
 ### index.py [-aA] [output-file]
 

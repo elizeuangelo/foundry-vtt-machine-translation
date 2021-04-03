@@ -1,0 +1,22 @@
+{
+    "NT.ButtonTitle": "风景",
+    "NT.Narrator": "旁白",
+    "NT.CfgName": "配置",
+    "NT.Title": "叙述工具",
+    "NT.CfgLabel": "设置",
+    "NT.NarrationNav": "旁白风格",
+    "NT.AppearanceHint": "配置旁白的外观。",
+    "NT.FontSize": "字体大小",
+    "NT.OthersNav": "行为",
+    "NT.OthersHint": "配置模块的行为。",
+    "NT.Pause": "暂停游戏时自动风景控制",
+    "NT.DurationMultiplier": "持续时间乘数",
+    "NT.DurationMultiplierHint": "乘以指定数字/叙述的持续时间",
+    "NT.TextColor": "颜色",
+    "NT.TextShadow": "影子",
+    "NT.TextCSS": "CSS（覆盖其他样式）",
+    "NT.BGColor": "背景颜色",
+    "NT.BGColorHint": "使用8位数字而不是6位来设置透明度，例如#000000a0",
+    "NT.BGImage": "背景图片",
+    "NT.NarrationStartPaused": "始终开始暂停的旁白"
+}

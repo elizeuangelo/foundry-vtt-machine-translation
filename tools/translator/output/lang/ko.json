@@ -1,0 +1,22 @@
+{
+    "NT.ButtonTitle": "풍경",
+    "NT.Narrator": "내레이터",
+    "NT.CfgName": "구성",
+    "NT.Title": "내레이터 도구",
+    "NT.CfgLabel": "설정",
+    "NT.NarrationNav": "내레이션 스타일",
+    "NT.AppearanceHint": "내레이션의 모양을 구성합니다.",
+    "NT.FontSize": "글꼴 크기",
+    "NT.OthersNav": "행동",
+    "NT.OthersHint": "모듈의 동작을 구성합니다.",
+    "NT.Pause": "게임이 일시 중지될 때 자동 풍경 제어",
+    "NT.DurationMultiplier": "지속 시간 승수",
+    "NT.DurationMultiplierHint": "지정된 숫자로 /내레이션의 지속 시간을 곱합니다.",
+    "NT.TextColor": "색",
+    "NT.TextShadow": "그림자",
+    "NT.TextCSS": "CSS(다른 스타일을 재정의)",
+    "NT.BGColor": "배경색",
+    "NT.BGColorHint": "6자리 대신 8자리 숫자를 사용하여 투명도를 설정합니다.#000000a0",
+    "NT.BGImage": "배경 이미지",
+    "NT.NarrationStartPaused": "항상 일시 중지된 내레이션 시작"
+}

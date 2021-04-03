@@ -1,0 +1,22 @@
+{
+    "NT.ButtonTitle": "Cenário",
+    "NT.Narrator": "Narrador",
+    "NT.CfgName": "Configurar",
+    "NT.Title": "Ferramentas do Narrador",
+    "NT.CfgLabel": "Configurações",
+    "NT.NarrationNav": "Estilo de narração",
+    "NT.AppearanceHint": "Configure a aparência da narração",
+    "NT.FontSize": "Tamanho da fonte",
+    "NT.OthersNav": "comportamento",
+    "NT.OthersHint": "Configure o comportamento do módulo.",
+    "NT.Pause": "Controle automático de cenário quando o jogo é pausado",
+    "NT.DurationMultiplier": "Multiplicador de duração",
+    "NT.DurationMultiplierHint": "Multiplica a duração do /narrar pelo número especificado",
+    "NT.TextColor": "Cor",
+    "NT.TextShadow": "sombra",
+    "NT.TextCSS": "CSS (substitui outros estilos)",
+    "NT.BGColor": "Cor de fundo",
+    "NT.BGColorHint": "Use 8 dígitos em vez de 6 para dar transparência, exemplo #000000a0",
+    "NT.BGImage": "Imagem de fundo",
+    "NT.NarrationStartPaused": "Sempre comece uma narração pausada"
+}
