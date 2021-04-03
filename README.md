@@ -21,11 +21,10 @@ Some python3 scripts for Foundry VTT developers to easily translate their packag
 
 ## Installation
 
-1. Clone the repository
+1. Clone the repository or [download the zip](https://github.com/elizeuangelo/foundry-vtt-machine-translation/archive/refs/tags/v1.0.zip)
 
 ```
-git clone https://github.com/elizeuangelo/foundry-vtt-machine-translation/releases/latest
-cd foundry-vtt-machine-translation
+git clone https://github.com/elizeuangelo/foundry-vtt-machine-translation.git
 ```
 
 2. Create and activate an virtual environment (optional)
