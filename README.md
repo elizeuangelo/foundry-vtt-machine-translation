@@ -1,6 +1,7 @@
 # Foundry VTT - Machine Translation
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/elizeuangelo/foundry-vtt-machine-translation)
+![GitHub release (latest SemVer)](https://img.shields.io/github/issues-raw/elizeuangelo/foundry-vtt-machine-translation)
 
 #### Donations
 
@@ -25,6 +26,7 @@ Some python3 scripts for Foundry VTT developers to easily translate their packag
 
 ```
 git clone https://github.com/elizeuangelo/foundry-vtt-machine-translation.git
+cd foundry-vtt-machine-translation
 ```
 
 2. Create and activate an virtual environment (optional)
